@@ -1,0 +1,43 @@
+@import url("./swatch.css");
+@import url("./menu.css");
+
+body,
+html {
+    font-family: "Roboto", sans-serif;
+}
+
+.alert-primary {
+    background-color: #064D73;
+    color: white;
+}
+
+.alert-success {
+    background-color: #262504;
+    color: white;
+}
+
+.alert-danger {
+    background-color: #730B14;
+    color: white;
+}
+
+.btn {
+    background-color: #064D73;
+    color: white;
+}
+
+.btn-success {
+    background-color: #262504;
+    color: white;
+}
+
+.btn-alert {
+    background-color: #730B14;
+    color: white;
+}
+
+.btn-outline {
+    border: 2px solid #260003;
+    color: #260003;
+    background-color: white;
+}

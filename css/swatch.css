@@ -1,0 +1,136 @@
+/* -------------------------------- 
+  
+  xPatterns
+  
+  -------------------------------- */
+.cd-box {
+    /* this is the container of various design elements - i.e. the 2 logo of the branding section */
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background: #ffffff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    padding: 6px;
+}
+
+
+
+/* xColor section - basic style */
+.cd-colors li {
+    text-align: center;
+    width: 48%;
+    float: left;
+    margin: 0 4% 1em 0;
+}
+
+.cd-colors li:nth-of-type(2n) {
+    margin-right: 0;
+}
+
+.cd-colors .cd-color-swatch {
+    position: relative;
+    width: 100%;
+    padding: 50% 0;
+}
+
+.cd-colors .cd-color-swatch::before,
+.cd-colors .cd-color-swatch::after {
+    /* lighter and darker color shades of the same swatch */
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 20%;
+}
+
+.cd-colors .cd-color-swatch::before {
+    left: 0;
+}
+
+.cd-colors .cd-color-swatch::after {
+    right: 0;
+}
+
+.cd-colors b {
+    display: block;
+    padding: .6em 0;
+}
+
+/*Logo*/
+.cd-colors li:nth-of-type(1) .cd-color-swatch {
+    background: #260003;
+}
+
+/* .cd-colors li:nth-of-type(1) .cd-color-swatch::before {
+    background: #759de8;
+}
+
+.cd-colors li:nth-of-type(1) .cd-color-swatch::after {
+    background: #497fe0; */
+/* } */
+
+/*Blue Accent*/
+.cd-colors li:nth-of-type(2) .cd-color-swatch {
+    background: #064D73;
+}
+
+/* .cd-colors li:nth-of-type(2) .cd-color-swatch::before {
+    background: #262627;
+}
+
+.cd-colors li:nth-of-type(2) .cd-color-swatch::after {
+    background: #0d0d0d;
+} */
+
+/*Green Accent*/
+.cd-colors li:nth-of-type(3) .cd-color-swatch {
+    background: #262504;
+}
+
+/* .cd-colors li:nth-of-type(3) .cd-color-swatch::before {
+    background: #e87a75;
+}
+
+.cd-colors li:nth-of-type(3) .cd-color-swatch::after {
+    background: #e05049;
+} */
+/*Red Accent*/
+.cd-colors li:nth-of-type(4) .cd-color-swatch {
+    background: #730B14;
+}
+
+/* .cd-colors li:nth-of-type(4) .cd-color-swatch::before {
+    background: #f3f3f3;
+}
+
+.cd-colors li:nth-of-type(4) .cd-color-swatch::after {
+    background: #d9d9d9;
+} */
+
+/*Background*/
+.cd-colors li:nth-of-type(5) .cd-color-swatch {
+    background: #ffffff;
+}
+
+/* .cd-colors li:nth-of-type(5) .cd-color-swatch::before {
+    background: white;
+}
+
+.cd-colors li:nth-of-type(5) .cd-color-swatch::after {
+    background: #f2f2f2;
+} */
+
+@media only screen and (min-width: 768px) {
+    .cd-colors li {
+        width: 19%;
+        float: left;
+        margin: 0 1.25% 1em 0;
+    }
+
+    .cd-colors li:nth-of-type(2n) {
+        margin-right: 1.25%;
+    }
+
+    .cd-colors li:nth-of-type(5n) {
+        margin-right: 0;
+    }
+}
